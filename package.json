@@ -22,7 +22,8 @@
     "recent",
     "vscode",
     "cursor",
-    "windsurf"
+    "windsurf",
+    "antigravity"
   ],
   "exports": {
     ".": "./dist/index.mjs",

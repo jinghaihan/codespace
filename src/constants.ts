@@ -20,6 +20,7 @@ export const DEFAULT_OPTIONS = {
 
 export const JSON_MARKER = '<!-- code-finder -->'
 
+/// keep-sorted
 export const VERSION_CONTROL_DIRECTORIES = [
   '.git',
   '.github',
@@ -27,56 +28,62 @@ export const VERSION_CONTROL_DIRECTORIES = [
   '.svn',
 ]
 
+/// keep-sorted
 export const IDE_DIRECTORIES = [
-  '.vscode',
   '.cursor',
   '.idea',
+  '.vscode',
 ]
 
+/// keep-sorted
 export const INSTALL_DIRECTORIES = [
   'node_modules',
 ]
 
+/// keep-sorted
 export const WORKSPACE_FILES = [
   '.gitignore',
-  'README.md',
-  'LICENSE',
   'LICENSE.md',
+  'LICENSE',
+  'README.md',
 ]
 
+/// keep-sorted
 export const CONFIG_FILES = [
+  'go.mod',
   'package.json',
   'pom.xml',
-  'go.mod',
 ]
 
+/// keep-sorted
 export const LOCK_FILES = [
+  'bun.lock',
+  'bun.lockb',
+  'deno.lock',
   'npm-shrinkwrap.json',
   'package-lock.json',
   'pnpm-lock.yaml',
   'pnpm-workspace.yaml',
   'yarn.lock',
-  'deno.lock',
-  'bun.lock',
-  'bun.lockb',
 ]
 
 export const IGNORE_DIRECTORIES = ['**/node_modules/**']
 
+/// keep-sorted
 export const IGNORE_FILES = [
-  'node_modules/**',
   '.git/**',
   '.github/**',
   '.hg/**',
-  '.svn/**',
-  'dist/**',
-  'build/**',
-  'coverage/**',
   '.next/**',
   '.nuxt/**',
+  '.svn/**',
   '*.log',
-  'tmp/**',
+  'build/**',
+  'coverage/**',
+  'dist/**',
+  'node_modules/**',
   'temp/**',
+  'tmp/**',
 ]
 
 export const CODESPACE_DIRECTORIES = [
@@ -91,20 +98,24 @@ export const CODESPACE_FILES = [
   ...LOCK_FILES,
 ]
 
+/// keep-sorted
 export const CODE_NAME_CHOICES = [
-  'Code',
+  'Antigravity',
   'Code - Insiders',
-  'VSCodium',
-  'VSCodium - Insiders',
+  'Code',
   'Cursor',
+  'VSCodium - Insiders',
+  'VSCodium',
   'Windsurf',
 ] as const
 
+/// keep-sorted
 export const EDITOR_NAME_MAP = {
-  'Code': 'Visual Studio Code',
+  'Antigravity': 'Antigravity',
   'Code - Insiders': 'Visual Studio Code - Insiders',
-  'VSCodium': 'VSCodium',
-  'VSCodium - Insiders': 'VSCodium - Insiders',
+  'Code': 'Visual Studio Code',
   'Cursor': 'Cursor',
+  'VSCodium - Insiders': 'VSCodium - Insiders',
+  'VSCodium': 'VSCodium',
   'Windsurf': 'Windsurf',
 } as const
